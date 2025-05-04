@@ -50,7 +50,7 @@ void TPQueue<T>::push(const T& el) {
     } else {
       Node* curr = head;
       Node* prev = nullptr;
-      while (curr != nullptr && curr->data.prior >= elem.prior) {
+      while (curr != nullptr && curr->data.prior >= el.prior) {
         prev = curr;
         curr = curr->next;
       }
