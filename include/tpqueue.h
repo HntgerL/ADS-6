@@ -12,6 +12,7 @@ class TPQueue {
     explicit Node(const T& data) : data(data), next(nullptr) {}
   };
   Node* head;
+
  public:
   TPQueue() : head(nullptr) {}
   ~TPQueue() {
